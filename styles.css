@@ -9,8 +9,24 @@
   cursor: pointer;
   border-radius: 50%;
   transition: width 0.5s, height 0.5s;
-  
+  animation-name: bounce;
+  animation-duration: 0.5s;
+  animation-iteration-count: 2;
 }
+
+@keyframes bounce{
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 249px;
+      width: 130px;
+      height: 70px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
 
 #input {
     display: none;
