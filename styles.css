@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
+
+.menu {
+  background: linear-gradient(45deg, #FCBBD1, #FFC684);
+  perspective: 600px;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: width 0.5s, height 0.5s;
+  
+}
+
+#input {
+    display: none;
+}
+
+.menu #designs {
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5F9FF;
+}
+
+#name {
+  font-family: 'Work Sans', sans-serif;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  top: 30px;
+  color: #53476D;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.menu:hover {
+  width: 120px;
+  height: 120px;
+}
+
+.menu:hover #designs {
+    opacity: 1;
+}
+
